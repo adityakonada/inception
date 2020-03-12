@@ -264,15 +264,6 @@ public class ExternalRecommenderIntegrationTest
         };
     }
 
-    private void createNamedEntity(CAS aCas, String aValue)
-    {
-        Type neType = getType(aCas, "de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity");
-        Feature valueFeature = neType.getFeatureByBaseName("value");
-        AnnotationFS ne = aCas.createAnnotation(neType, 0, 42);
-        ne.setStringValue(valueFeature, aValue);
-        aCas.addFsToIndexes(ne);
-    }
-
     private void addCasMetadata(JCas aJCas, long aDocumentId)
     {
         CASMetadata cmd = new CASMetadata(aJCas);

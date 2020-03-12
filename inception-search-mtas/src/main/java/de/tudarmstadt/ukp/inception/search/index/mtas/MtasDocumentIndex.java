@@ -987,7 +987,7 @@ public class MtasDocumentIndex
                 sourceDocs, annotationDocs, users));
     }
 
-    private String getShortName(String aName)
+    private String aName()
     {
         String name;
 

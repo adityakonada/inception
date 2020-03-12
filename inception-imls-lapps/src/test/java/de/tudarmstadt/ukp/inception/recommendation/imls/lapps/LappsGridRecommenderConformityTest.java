@@ -136,18 +136,6 @@ public class LappsGridRecommenderConformityTest
         return casList.get(0);
     }
 
-    private static List<LappsGridService> getNerServices() throws Exception
-    {
-        Map<String, List<LappsGridService>> services = loadPredefinedServicesData();
-        return services.get("ner");
-    }
-
-    private static List<LappsGridService> getPosServices() throws Exception
-    {
-        Map<String, List<LappsGridService>> services = loadPredefinedServicesData();
-        return services.get("pos");
-    }
-
     private static Map<String, List<LappsGridService>> loadPredefinedServicesData()
             throws Exception
     {
