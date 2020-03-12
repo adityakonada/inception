@@ -34,7 +34,11 @@ import org.junit.runners.Parameterized;
 import de.tudarmstadt.ukp.inception.recommendation.api.evaluation.IncrementalSplitter;
 
 @RunWith(Enclosed.class)
-public class IncrementalSplitterTest {
+public final class IncrementalSplitterTest {
+
+	   private IncrementalSplitterTest() {
+
+
 
     @RunWith(Parameterized.class)
     public static class ParameterizedTests {

@@ -32,9 +32,10 @@ import de.tudarmstadt.ukp.inception.kb.graph.KBHandle;
 import de.tudarmstadt.ukp.inception.kb.graph.KBObject;
 import de.tudarmstadt.ukp.inception.kb.graph.KBProperty;
 import de.tudarmstadt.ukp.inception.kb.model.KnowledgeBase;
+public final class Queries {
 
-public class Queries
-{
+	   private Queries() {
+
     private final static Logger LOG = LoggerFactory.getLogger(Queries.class);
     
     public static Map<String, KBProperty> fetchProperties(KnowledgeBase aKB,
@@ -75,4 +76,5 @@ public class Queries
                     .collect(Collectors.toMap(KBObject::getIdentifier, Function.identity()));
         }
     }
+}
 }

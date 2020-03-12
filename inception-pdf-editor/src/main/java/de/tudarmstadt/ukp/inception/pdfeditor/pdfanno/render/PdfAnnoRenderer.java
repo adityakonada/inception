@@ -46,8 +46,10 @@ import de.tudarmstadt.ukp.inception.pdfeditor.pdfanno.model.PdfExtractLine;
 import de.tudarmstadt.ukp.inception.pdfeditor.pdfanno.model.Relation;
 import de.tudarmstadt.ukp.inception.pdfeditor.pdfanno.model.Span;
 
-public class PdfAnnoRenderer
-{
+public final class PdfAnnoRenderer {
+
+	   private PdfAnnoRenderer() {
+
     private static final int WINDOW_SIZE_INCREMENT = 5;
 
     public static PdfAnnoModel render(AnnotatorState aState, VDocument aVDoc, String aDocumentText,
@@ -282,4 +284,5 @@ public class PdfAnnoRenderer
         return convertToDocumentOffsets(
             Arrays.asList(aOffset), aDocumentModel, aPdfExtractFile).get(0);
     }
+}
 }

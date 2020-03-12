@@ -24,9 +24,10 @@ import org.apache.wicket.request.mapper.parameter.PageParameters;
 import de.tudarmstadt.ukp.clarin.webanno.api.DocumentService;
 import de.tudarmstadt.ukp.clarin.webanno.model.Project;
 
-public class LinkProvider
+public final class LinkProvider
 {
-
+	private LinkProvider()
+	{
     /**
      * Create an external link to a page which opens a document, codes the url as
      * {@code aPageClass?params#!p=projectId&d=docId}.
@@ -41,6 +42,7 @@ public class LinkProvider
         
         return createDocumentPageLink(aProject, docId, aId, aLinkLabel, aPageClass);
     }
+}
     
     public static ExternalLink createDocumentPageLink(Project aProject, long aDocId, String aId,
             String aLinkLabel, Class<? extends WebPage> aPageClass)

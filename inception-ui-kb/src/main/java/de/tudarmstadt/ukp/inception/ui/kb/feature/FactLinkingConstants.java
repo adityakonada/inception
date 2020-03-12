@@ -17,8 +17,11 @@
  */
 package de.tudarmstadt.ukp.inception.ui.kb.feature;
 
-public final class FactLinkingConstants
-{
+public final class FactLinkingConstants {
+
+	   private FactLinkingConstants() {
+
+
     public static final String SUBJECT_LINK = "de.tudarmstadt.ukp.inception.api.kb.type.FactSubjectLink";
     public static final String OBJECT_LINK = "de.tudarmstadt.ukp.inception.api.kb.type.FactObjectLink";
     public static final String QUALIFIER_LINK = "de.tudarmstadt.ukp.inception.api.kb.type.FactQualifierLink";
@@ -30,4 +33,5 @@ public final class FactLinkingConstants
 
     //identifier here is a feature of the NamedEntity layer
     public static final String LINKED_LAYER_FEATURE = "identifier";
+}
 }

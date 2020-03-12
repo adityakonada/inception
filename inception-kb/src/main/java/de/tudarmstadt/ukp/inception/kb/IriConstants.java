@@ -38,8 +38,10 @@ import org.eclipse.rdf4j.model.vocabulary.XMLSchema;
 import de.tudarmstadt.ukp.inception.kb.graph.KBObject;
 import de.tudarmstadt.ukp.inception.kb.model.KnowledgeBase;
 
-public class IriConstants
-{
+public final class IriConstants {
+
+	   private IriConstants() {
+
     public static final String INCEPTION_SCHEMA_NAMESPACE = "http://www.ukp.informatik.tu-darmstadt.de/inception/schema-1.0#";
     public static final String INCEPTION_NAMESPACE = "http://www.ukp.informatik.tu-darmstadt.de/inception/1.0#";
 
@@ -144,11 +146,12 @@ public class IriConstants
                 return true;
             }
         }
-        return false;
+        return false; 
     }
 
     public static boolean isFromImplicitNamespace(KBObject handle) {
         return IMPLICIT_NAMESPACES.stream()
                 .anyMatch(ns -> handle.getIdentifier().startsWith(ns));
     }
+}
 }

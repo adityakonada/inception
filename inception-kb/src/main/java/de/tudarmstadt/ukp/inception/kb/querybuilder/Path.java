@@ -28,8 +28,10 @@ import org.eclipse.rdf4j.sparqlbuilder.rdf.RdfPredicate;
 /**
  * Construct property paths for use with the {@link SparqlBuilder}
  */
-public class Path
-{
+public final class Path {
+
+	   private Path() {
+
     public static RdfPredicate of(QueryElement... aElements)
     {
         return () -> Arrays.stream(aElements)
@@ -46,4 +48,5 @@ public class Path
     {
         return () -> aElement.getQueryString() + "+";
     }
+}
 }

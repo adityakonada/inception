@@ -21,9 +21,11 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.safety.Cleaner;
 import org.jsoup.safety.Whitelist;
+public final class  Utilities {
 
-public class Utilities
-{
+	   private  Utilities() {
+
+
     public static String cleanHighlight(String aHighlight) {
         Whitelist wl = new Whitelist();
         wl.addTags("em");
@@ -34,4 +36,5 @@ public class Utilities
 
         return clean.body().html();
     }
+}
 }

@@ -26,8 +26,10 @@ import org.slf4j.LoggerFactory;
 
 import de.tudarmstadt.ukp.inception.support.annotation.OffsetSpan;
 
-public class HighlightUtils
-{
+public final class HighlightUtils {
+
+	   private HighlightUtils() {
+
     private static final Logger LOG = LoggerFactory.getLogger(HighlightUtils.class);
     
     private static final String HIGHLIGHT_START_TAG = "<em>";
@@ -66,4 +68,5 @@ public class HighlightUtils
             return Optional.empty();
         }
     }
+}
 }

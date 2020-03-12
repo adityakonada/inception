@@ -30,8 +30,10 @@ import org.eclipse.rdf4j.repository.RepositoryConnection;
 import de.tudarmstadt.ukp.inception.kb.graph.KBHandle;
 import de.tudarmstadt.ukp.inception.kb.model.KnowledgeBase;
 
-public class SPARQLQueryBuilderAsserts
-{
+public final class SPARQLQueryBuilderAsserts {
+
+	   private SPARQLQueryBuilderAsserts() {
+
     public static void assertThatChildrenOfExplicitRootCanBeRetrieved(KnowledgeBase aKB,
             Repository aRepository, String aRootClass)
     {
@@ -121,4 +123,5 @@ public class SPARQLQueryBuilderAsserts
             return aException;
         }
     }
+}
 }

@@ -43,8 +43,10 @@ import org.apache.uima.resource.metadata.TypeSystemDescription;
 import de.tudarmstadt.ukp.clarin.webanno.api.AnnotationSchemaService;
 import de.tudarmstadt.ukp.clarin.webanno.api.dao.AnnotationSchemaServiceImpl;
 
-public class RecommenderTestHelper
-{
+public final class RecommenderTestHelper
+  {
+	 private RecommenderTestHelper()
+       {
 
     public static void addScoreFeature(CAS aCas, String aTypeName, String aFeatureName)
             throws IOException, UIMAException
@@ -92,5 +94,5 @@ public class RecommenderTestHelper
                 .filter(fs -> fs.getBooleanValue(feature))
                 .collect(Collectors.toList());
     }
-
+  }
 }

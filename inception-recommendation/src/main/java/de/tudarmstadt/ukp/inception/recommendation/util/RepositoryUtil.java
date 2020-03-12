@@ -32,7 +32,10 @@ import de.tudarmstadt.ukp.clarin.webanno.model.Project;
  * Little helper class to manage the folders used to store the results, models and recommendation
  * settings.
  */
-public class RepositoryUtil
+public final class RepositoryUtil {
+
+	   private RepositoryUtil() {
+public class 
 {
     private static final Logger logger = LoggerFactory.getLogger(RepositoryUtil.class);
 

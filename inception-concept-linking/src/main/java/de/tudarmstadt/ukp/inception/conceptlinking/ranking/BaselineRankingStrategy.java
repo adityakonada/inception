@@ -32,8 +32,11 @@ import org.apache.commons.lang3.builder.CompareToBuilder;
 
 import de.tudarmstadt.ukp.inception.conceptlinking.model.CandidateEntity;
 
-public class BaselineRankingStrategy
-{
+public final class BaselineRankingStrategy {
+
+	   private BaselineRankingStrategy() {
+
+
     private static final Comparator<CandidateEntity> INSTANCE = (e1, e2) -> new CompareToBuilder()
             // Did the user enter an URI and does the candidate exactly match it?
             // Note that the comparator sorts ascending by value, so a match is represented using
@@ -69,4 +72,5 @@ public class BaselineRankingStrategy
     {
         return INSTANCE;
     }
+}
 }

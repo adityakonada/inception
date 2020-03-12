@@ -39,8 +39,10 @@ import de.tudarmstadt.ukp.inception.conceptlinking.model.Property;
 /**
  * Contains utility methods to process files needed for Concept Linking
  */
-public class FileUtils
-{
+public final class FileUtils {
+
+	   private FileUtils() {
+
 
     private final static Logger log = LoggerFactory.getLogger(FileUtils.class);
 
@@ -114,4 +116,5 @@ public class FileUtils
         }
         return propertyBlacklist;
     }
+}
 }

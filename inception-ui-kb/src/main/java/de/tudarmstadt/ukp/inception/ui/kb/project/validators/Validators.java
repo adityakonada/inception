@@ -20,11 +20,14 @@ package de.tudarmstadt.ukp.inception.ui.kb.project.validators;
 import org.apache.wicket.validation.IValidator;
 import org.apache.wicket.validation.validator.UrlValidator;
 
-public class Validators
-{
+public final class Validators {
+
+	   private Validators() {
+
     public static final IValidator<String> IRI_VALIDATOR = new IriValidator();
 
     public static final UrlValidator URL_VALIDATOR = new UrlValidator(
         new String[] { "http", "https" });
 
+}
 }

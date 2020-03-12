@@ -21,11 +21,14 @@ import org.apache.wicket.MetaDataKey;
 
 import de.tudarmstadt.ukp.inception.active.learning.ActiveLearningServiceImpl;
 
-public final class ActiveLearningUserStateMetaData
-{
+public final class ActiveLearningUserStateMetaData {
+
+	   private ActiveLearningUserStateMetaData() {
+
     public static final MetaDataKey<ActiveLearningServiceImpl.ActiveLearningUserState>
         CURRENT_AL_USER_STATE = new MetaDataKey<ActiveLearningServiceImpl.ActiveLearningUserState>()
         {
             private static final long serialVersionUID = 1L;
         };
+}
 }

@@ -36,8 +36,10 @@ import de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token;
 import de.tudarmstadt.ukp.inception.recommendation.api.LearningRecordService;
 import de.tudarmstadt.ukp.inception.recommendation.api.RecommendationService;
 
-public class RecommendationRenderer
-{
+public final class RecommendationRenderer {
+
+	   private RecommendationRenderer() {
+
     /**
      * wrap JSON responses to BRAT visualizer
      *
@@ -92,4 +94,5 @@ public class RecommendationRenderer
         }
         return null;
     }
+}
 }
