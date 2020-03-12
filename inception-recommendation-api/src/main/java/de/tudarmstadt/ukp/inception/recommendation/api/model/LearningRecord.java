@@ -107,21 +107,37 @@ public class LearningRecord
         this.user = user;
     }
 
+    /**
+     * @deprecated
+     * 
+     */
     @Deprecated
     public int getOffsetTokenBegin() {
         return offsetTokenBegin;
     }
 
+    /**
+     * @deprecated
+     * 
+     */
     @Deprecated
     public void setOffsetTokenBegin(int offsetTokenBegin) {
         this.offsetTokenBegin = offsetTokenBegin;
     }
 
+    /**
+     * @deprecated
+     * 
+     */
     @Deprecated
     public int getOffsetTokenEnd() {
         return offsetTokenEnd;
     }
 
+    /**
+     * @deprecated
+     * 
+     */
     @Deprecated
     public void setOffsetTokenEnd(int offsetTokenEnd) {
         this.offsetTokenEnd = offsetTokenEnd;

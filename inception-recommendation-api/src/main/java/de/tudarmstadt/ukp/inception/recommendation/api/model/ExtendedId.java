@@ -72,6 +72,10 @@ public class ExtendedId
         return projectId;
     }
 
+    /**
+     * @deprecated
+     * 
+     */
     @Deprecated
     public Offset getOffset()
     {

@@ -42,9 +42,17 @@ public class KBHandle
     private String debugInfo;
     
     // domain and range for cases in which the KBHandle represents a property
+    /**
+     * @deprecated
+     * 
+     */
     @Deprecated
     private String domain;
     
+    /**
+     * @deprecated
+     * 
+     */
     @Deprecated
     private String range;
 
@@ -78,6 +86,10 @@ public class KBHandle
         language = aLanguage;
     }
 
+    /**
+     * @deprecated
+     * 
+     */
     @Deprecated
     public KBHandle(String aIdentifier, String aLabel, String aDescription, String aLanguage,
             String aDomain, String aRange)
@@ -90,24 +102,40 @@ public class KBHandle
         range = aRange;
     }
 
+    /**
+     * @deprecated
+     * 
+     */
     @Deprecated
     public String getDomain()
     {
         return domain;
     }
 
+    /**
+     * @deprecated
+     * 
+     */
     @Deprecated
     public void setDomain(String aDomain)
     {
         domain = aDomain;
     }
 
+    /**
+     * @deprecated
+     * 
+     */
     @Deprecated
     public String getRange()
     {
         return range;
     }
 
+    /**
+     * @deprecated
+     * 
+     */
     @Deprecated
     public void setRange(String aRange)
     {

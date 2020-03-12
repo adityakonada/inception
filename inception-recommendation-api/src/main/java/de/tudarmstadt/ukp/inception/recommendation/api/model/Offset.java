@@ -39,30 +39,50 @@ public class Offset
         return "[" + begin + "," + end + "]";
     }
 
+    /**
+     * @deprecated
+     * 
+     */
     @Deprecated
     public int getBeginCharacter()
     {
         return getBegin();
     }
 
+    /**
+     * @deprecated
+     * 
+     */
     @Deprecated
     public void setBeginCharacter(int beginCharacter)
     {
         setBegin(beginCharacter);
     }
 
+    /**
+     * @deprecated
+     * 
+     */
     @Deprecated
     public int getEndCharacter()
     {
         return getEnd();
     }
 
+    /**
+     * @deprecated
+     * 
+     */
     @Deprecated
     public void setEndCharacter(int endCharacter)
     {
         setEnd(endCharacter);
     }
     
+    /**
+     * @deprecated
+     * 
+     */
     @Deprecated
     public int getStart()
     {
